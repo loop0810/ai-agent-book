@@ -601,7 +601,11 @@ Claude Code 的实践揭示了一个深层的模式：当 Prompt Cache 的经济
 
 ### 语气与风格：系统提示词的“人格”
 
-语气和风格的设计是提示工程中最容易被忽视，却又深刻影响用户体验的部分。例如，可以要求 “You MUST answer concisely with fewer than 4 lines”（你必须简洁地回答，不超过 4 行）；在无法完成任务时，则要求 “keep your response to 1-2 sentences”（把回复控制在 1-2 句话），并且“不要解释为什么不能做某事”。这种设计避免了 Agent 陷入冗长的自我辩护。大写字母（如 “NEVER do X”）比 “Please avoid doing X” 更能引起模型的“注意”，但过度使用会导致效果被稀释，应保留给真正关键的约束。
+语气和风格的设计是提示工程中最容易被忽视，却又深刻影响用户体验的部分。
+例如：
+* 可以要求 “You MUST answer concisely with fewer than 4 lines”（你必须简洁地回答，不超过 4 行）；
+* 在无法完成任务时，则要求 “keep your response to 1-2 sentences”（把回复控制在 1-2 句话），并且“不要解释为什么不能做某事”。这种设计避免了 Agent 陷入冗长的自我辩护。
+* 大写字母（如 “NEVER do X”）比 “Please avoid doing X” 更能引起模型的“注意”，但过度使用会导致效果被稀释，应保留给真正关键的约束。
 
 ### 结构化提示：系统提示词的“格式”
 
